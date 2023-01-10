@@ -1,1 +1,12 @@
-test
+# coding = utf-8
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+browser = webdriver.Firefox()1
+
+browser.get("http://www.baidu.com")
+
+browser.find_element(By.ID,"kw").send_keys("selenium")
+browser.find_element(By.ID,"su").click()
+
+browser.quit()
